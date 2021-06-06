@@ -24,12 +24,15 @@ public class Solution1 {
 		int ans = 0;
 		int all [] = new int [n];
 		
-		for(int i : reverse)
+		for(int i : reverse){
 			all[i -1]++;
+		}
+			
 		
-		for(int i : lost)
+		for(int i : lost){
 			all[i - 1]--;
-		
+		}
+
 		for (int i = 0; i < all.length; i++) {
 			if (all[i] < 0) {
 				if(i != all.length && all[i + 1] > 0){
