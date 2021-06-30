@@ -42,9 +42,6 @@ public class Stack_impl {
         System.out.println(stack[top--]+" 나옴");
         System.out.println(stack[top--]+" 나옴");
 		
-		
-		
-		
 	}
 
 }
