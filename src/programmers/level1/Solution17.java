@@ -35,7 +35,6 @@ public class Solution17 {
                 continue;
 
             }
-
             stage[i]++;
 
         }
