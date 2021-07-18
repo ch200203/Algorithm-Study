@@ -10,10 +10,15 @@ package programmers.level2;
 
 public class Solution3 {
 	public static void main(String[] args) {
+		int [] arr = {2, 6 ,8 ,14};
+		
+		System.out.println("answer :: " + solution(arr));
+		
 		
 	}
 	
 	public static int solution(int[] arr){
+		int res = 0;
 		
 		return 0;
 	}
