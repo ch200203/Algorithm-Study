@@ -24,9 +24,14 @@ public class Solution5 {
 			if(scoville[i] < K){
 				scoville[i] = scoville[i] + (scoville[i + 1] * 2);
 				
+				for (int j = 0; j < scoville.length; j++) {
+					
+				}
 			}
 		}
-		return 0;
+		int res = 0;
+		
+		return res;
 	}
 	
 
