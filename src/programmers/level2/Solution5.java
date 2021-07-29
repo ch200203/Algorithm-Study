@@ -1,6 +1,7 @@
 package programmers.level2;
 
 import java.util.Arrays;
+import java.util.PriorityQueue;
 
 // 더 맵게
 // https://programmers.co.kr/learn/courses/30/lessons/42626
@@ -17,7 +18,7 @@ public class Solution5 {
 	
 	}
 	
-	public static int solution(int K, int [] scoville){
+/*	public static int solution(int K, int [] scoville){
 		Arrays.sort(scoville);
 		
 		for (int i = 0; i < scoville.length; i++) {
@@ -32,6 +33,38 @@ public class Solution5 {
 		int res = 0;
 		
 		return res;
+	}*/
+	
+	public static int solution(int K, int [] scoville){
+		int answer = 0;
+		
+		PriorityQueue<Integer> heap = new PriorityQueue();
+		
+		/*일반적으로 큐는 데이터를 일시적으로 쌓아두기 위한 자료구조로 스택과는 다르게
+		FIFO(First In First Out)의
+		구조 즉 먼저 들어온 데이터가 먼저 나가는 구조를 가집니다*/
+
+        for (int aScoville : scoville) {
+            heap.offer(aScoville);
+        }
+        
+        while (heap.peek() < K) {
+        	if(heap.size() == 1){
+        		return -1;
+        	}
+        	
+        	int a = heap.poll(); // // priorityQueue에 첫번째 값을 반환하고 제거 비어있다면 null
+        	int b = heap.poll();
+        	
+        	int res = a + (b * 2);
+        	
+        	heap.offer(res);
+        	answer++;
+			
+		}
+        
+        return answer;
+
 	}
 	
 
