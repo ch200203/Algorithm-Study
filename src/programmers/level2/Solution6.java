@@ -1,11 +1,14 @@
-public class {
+package programmers.level2;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Stack;
 
-
-    public void public static void main(String[] args) {
-        
-    }
-
+public class Solution6 {
+	public static void main(String[] args) {
+		
+	}
+	
     public int[] solution(int[] progresses, int[] speeds) {
         Stack<Integer> stack = new Stack<Integer>();
 
@@ -35,5 +38,4 @@ public class {
 
         return answer;
     }
-
 }
