@@ -13,10 +13,25 @@ import java.util.Scanner;
 */
 public class Dijkstra {
 	public static void main(String[] args) {
+		
+		Dijkstra_Graph dg = new Dijkstra_Graph();
+		dg.Graph(6); // 노드수만큼 그래프 생성
+
+		// 시작, 끝 , 간선 가중치
+		
+		dg.input(0, 1, 7);
+		dg.input(0, 2, 9);
+		dg.input(0, 5, 14);
+		dg.input(1, 2, 10);
+		dg.input(1, 3, 15);
+		dg.input(2, 3, 11);
+		dg.input(2, 5, 2);
+		dg.input(3, 4, 6);
+		dg.input(4, 5, 9);
 		// 1. 인접행렬 방식
 		
-		
-		
+		dg.dijkstra_solution(0);
+	
 	}
 }
 
@@ -59,8 +74,8 @@ class Dijkstra_Graph {
 		
 		// 결과값 출력
 		for (int i = 0; i < n; i++) {
-			if(distance[i] == 2147483647) System.out.println("무한");
-			else System.out.println(distance[i] + " ");
+			if(distance[i] == 2147483647) System.out.print("무한 ");
+			else System.out.print(distance[i] + " ");
 		}
 		System.out.println("");
 		
@@ -72,6 +87,53 @@ class Dijkstra_Graph {
 		}
 		
 		// 결과 값 출력
+		System.out.println(" 결과출력 2");
+		for (int i = 0; i < n; i++) {
+			if(distance[i] == 2147483647) System.out.print("무한 ");
+			else System.out.print(distance[i] + " ");
+		}
+		System.out.println("");
+
+		for (int a = 0; a < n-1; a++) {
+			// 원래는 모든 노드가 true될때까지 인데 
+			// 노드가 n개 있을 때 다익스트라를 위해서 반복수는 n-1번이면 된다. 
+			// 원하지 않으면 각각의 노드가 모두 true인지 확인하는 식으로 구현해도 된다.
+			
+			int min = Integer.MAX_VALUE;
+			int min_index = -1;
+			
+			// Node의 최솟값
+			for (int i = 0; i < n; i++) {
+				if(!check[i]){
+					if(distance[i] < min){
+						min = distance[i];
+						min_index = i;
+					}
+				}
+			}
+			
+			// 다른 노드를 거쳣서 가는 것이 비용이 더적은지 검증
+			
+			check[min_index] = true;
+			for (int i = 0; i < n; i++) {
+				if(!check[i] && maps[min_index][i] != Integer.MAX_VALUE){
+					if(distance[min_index] + maps[min_index][i] < distance[i]){
+						distance[i]  = distance[min_index] + maps[min_index][i];
+					}
+				}
+			}
+			
+			// 결과 값 출력
+			System.out.println(" 결과출력 3");
+			for (int i = 0; i < n; i++) {
+				if(distance[i] == 2147483647) System.out.print("무한 ");
+				else System.out.print(distance[i] + " ");
+			}
+			System.out.println("");
+
+		}
+		
+		
 	
 	}
 
