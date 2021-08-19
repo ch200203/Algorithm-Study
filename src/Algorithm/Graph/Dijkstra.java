@@ -1,6 +1,7 @@
 package Algorithm.Graph;
 
 import java.util.Iterator;
+import java.util.PriorityQueue;
 import java.util.Scanner;
 
 // 다익스트라 알고리즘
@@ -136,6 +137,27 @@ class Dijkstra_Graph {
 		
 	
 	}
+}
 
-		
+
+// 2. 우선순위 큐 방식
+
+// 노드 클래스 선언 및 노드까지의 가중치와 인덱스를 객체로 선언
+// 가중치를 기준으로 Compareable을 선언하여 우선순위 큐를 판단
+class Node implements Comparable<Node> {
+	private int weight;
+	private int index;
+	
+	public Node(int weight, int index){
+		this.weight = weight;
+		this.index = index;
+	}
+
+	@Override
+	public int compareTo(Node node) {
+		return Integer.compare(this.weight, node.weight);
+	}
+	
+	PriorityQueue<Node> que = new PriorityQueue<>(); // 노드까지의 거리를 저장할 우선순위 큐
+	
 }
