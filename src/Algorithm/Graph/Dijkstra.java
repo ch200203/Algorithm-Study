@@ -132,10 +132,7 @@ class Dijkstra_Graph {
 			}
 			System.out.println("");
 
-		}
-		
-		
-	
+		}	
 	}
 }
 
@@ -144,20 +141,58 @@ class Dijkstra_Graph {
 
 // 노드 클래스 선언 및 노드까지의 가중치와 인덱스를 객체로 선언
 // 가중치를 기준으로 Compareable을 선언하여 우선순위 큐를 판단
-class Node implements Comparable<Node> {
-	private int weight;
-	private int index;
-	
-	public Node(int weight, int index){
-		this.weight = weight;
-		this.index = index;
-	}
 
-	@Override
-	public int compareTo(Node node) {
-		return Integer.compare(this.weight, node.weight);
+class Dijkstra_Graph2{
+	private int n; // 노드 수
+	private int maps[][]; // 노드들간의 가중치 저장할 변수
+	
+	public void Graph(int n){
+		this.n = n;
+		maps = new int [n][n];
+		
+		// 인접 행렬의 모든 값은 무한대로 초기화 시킴
+		for (int i = 0; i < n; i++) {
+			for (int j = 0; j < n; j++) {
+				maps[i][j] = Integer.MAX_VALUE;
+			}
+		}
 	}
 	
-	PriorityQueue<Node> que = new PriorityQueue<>(); // 노드까지의 거리를 저장할 우선순위 큐
+	class Node implements Comparable<Node> {
+		private int weight;
+		private int index;
+		
+		public Node(int weight, int index){
+			this.weight = weight;
+			this.index = index;
+		}
+
+		@Override
+		public int compareTo(Node node) {
+			return Integer.compare(this.weight, node.weight);
+		}
+	}
 	
+	public void input(int i, int j, int w){
+		maps[i][j] = w;
+		maps[j][i] = w;
+	}
+	
+	public void dikstra__solution2(int v) {
+		PriorityQueue<Node> que = new PriorityQueue<>(); // 노드까지의 거리를 저장할 우선순위 큐
+		int distance[] = new int[n]; // 최단 거리를 저장할 변수
+		boolean [] check = new boolean[n]; // 해당 노드를 방문했는지 체크 할 변수
+		
+		// distance 값 초기화, 무한대 = int의 최대값
+		for (int i = 0; i < n; i++) {
+			distance[i] = Integer.MAX_VALUE;
+		}
+		
+		// 시작 노드값 초기화
+		que.add(new Node(v, 0));
+		distance[v] = 0;
+		check[v] = true;
+	}
 }
+
+
