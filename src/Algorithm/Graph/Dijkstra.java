@@ -192,6 +192,49 @@ class Dijkstra_Graph2{
 		que.add(new Node(v, 0));
 		distance[v] = 0;
 		check[v] = true;
+		
+		// 결과 출력
+		System.out.println(" 결과출력 1");
+		for (int i = 0; i < n; i++) {
+			if(distance[i] == 2147483647) System.out.print("무한 ");
+			else System.out.print(distance[i] + " ");
+		}
+		System.out.println("");
+		
+		while(!que.isEmpty()){
+			// 원래는 모든 노드가 true될때까지 인데 
+			// 노드가 n개 있을 때 다익스트라를 위해서 반복수는 n-1번이면 된다. 
+			// 원하지 않으면 각각의 노드가 모두 true인지 확인하는 식으로 구현해도 된다.
+			int min = Integer.MAX_VALUE; int min_index = -1;
+			
+			// 노드 최소값 꺼내기
+			
+			Node node = que.poll();
+			min = node.weight;
+			min_index = node.index;
+			
+			
+			// 다른 노드를 거쳐서 가는 것이 더 비용이 적은 지 확인
+			check[min_index] = true;
+			for (int i = 0; i < n; i++) {
+				if(!check[i] && maps[min_index][i] != Integer.MAX_VALUE){
+					if(distance[min_index] + maps[min_index][i] < distance[i]){
+						distance[i] = distance[min_index] + maps[min_index][i];
+						que.add(new Node(distance[i], i));
+					}
+				}
+			}
+			// 결과 출력
+			System.out.println(" 결과출력 2");
+			for (int i = 0; i < n; i++) {
+				if(distance[i] == 2147483647) System.out.print("무한 ");
+				else System.out.print(distance[i] + " ");
+			}
+			System.out.println("");
+			
+
+		
+		}
 	}
 }
 
