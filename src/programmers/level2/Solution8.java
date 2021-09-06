@@ -6,6 +6,9 @@ package programmers.level2;
 
 public class Solution8 {
 	public static void main(String[] args) {
+		int [] progresses = {93, 30, 55};
+		int [] speeds = {1, 30, 10};
+		System.out.println(solution(progresses, speeds));
 
 	}
 
