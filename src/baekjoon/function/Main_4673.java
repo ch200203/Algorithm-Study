@@ -4,7 +4,7 @@ package baekjoon.function;
 // 셀프 넘버
 // 10000보다 작거나 같은 셀프 넘버를 한 줄에 하나씩 출력하는 프로그램을 작성하시오.
 
-public class Solution_4673 {
+public class Main_4673 {
 	public static void main(String[] args) {
 		StringBuilder sb = new StringBuilder();
 		
