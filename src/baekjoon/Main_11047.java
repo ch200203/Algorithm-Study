@@ -6,12 +6,12 @@ class Main_11047{
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
-        int n = scan.nextInt();
-        int k = scan.nextInt();
+        int n = scan.nextInt(); // 동전의 갯수
+        int k = scan.nextInt(); // 금액
 
-        int coin [] = new int[k];
+        int coin [] = new int[n];
 
-        for (int i = 0; i < k; i++) {
+        for (int i = 0; i < n; i++) {
             coin[i] = scan.nextInt();
         }
 
@@ -25,7 +25,7 @@ class Main_11047{
             if(coin[i] <= k) {
                 // 현재 가치의 동전으로 구성할 수 있는 개수를 더해준다.
                 count += (k / coin[i]);
-                k = k % coin[i];
+                k = k % coin[i];    
             }
         }
 

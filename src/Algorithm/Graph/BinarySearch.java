@@ -14,7 +14,7 @@ public class BinarySearch {
         if (result == -1)
             System.out.println("데이터를 찾지 못하였습니다");
         else
-            System.out.println("데이터의 위치는 " + result + "번 째입니다.");
+            System.out.println("데이터의 위치는 " + (result + 1) + "번 째입니다.");
 
     }
 
