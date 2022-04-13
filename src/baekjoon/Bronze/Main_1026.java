@@ -1,4 +1,4 @@
-package baekjoon;
+package baekjoon.Bronze;
 
 import java.util.ArrayList;
 import java.util.Comparator;

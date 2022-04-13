@@ -1,4 +1,4 @@
-package baekjoon;
+package baekjoon.Bronze;
 
 import java.lang.reflect.Array;
 import java.util.Arrays;
