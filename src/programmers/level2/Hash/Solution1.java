@@ -2,12 +2,16 @@ package programmers.level2.Hash;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Scanner;
 
 class Solutio1 {
  public static void main(String[] args) {
      String phone_book [] = {"123","456","789"};
-
+    
      System.out.println(solution(phone_book));
+
+     Scanner scan = new Scanner(System.in);
+     
  }  
  
  public static Boolean solution(String [] phone_book)  {
