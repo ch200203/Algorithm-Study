@@ -1,3 +1,5 @@
+package baekjoon.Bronze;
+
 import java.util.Scanner;
  
 public class Main_1110 {
