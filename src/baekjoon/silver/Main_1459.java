@@ -26,7 +26,7 @@ public class Main_1459 {
         // 2-2. 짝수일 경우 대각선으로만 이동 가능
 
         // 2-1. x + y 가 짝수라면
-        if((X+Y) % 2 == 0) {
+        if((X+Y) % 2 == 0) {    
             move2 = Math.max(X, Y) * S;
         } else { // 2-2 x + y가 홀수면
             move2 = (Math.max(X, Y) - 1) * 2 + W;
