@@ -1,6 +1,6 @@
 package programmers.level2;
 
-// 기능개발
+// 기능개발 / 스택 / 큐
 // https://programmers.co.kr/learn/courses/30/lessons/42586
 public class Solution_12 {
     public static void main(String[] args) {
