@@ -61,8 +61,4 @@ public class solution10 {
 		return answer;
 	}
 
-	private static Collector Collectorsjoining() {
-		return null;
-	}
-
 }

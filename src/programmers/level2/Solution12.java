@@ -9,7 +9,7 @@ import java.util.Queue;
 // https://programmers.co.kr/learn/courses/30/lessons/42586
 // 풀이참고 : https://techhan.github.io/algorithm/programmers-55/
 
-public class Solution_12 {
+public class Solution12 {
     public static void main(String[] args) {
         int[] progresses =  {93, 30, 55};
         int[] speeds = {1, 30, 5};
