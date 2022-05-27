@@ -2,6 +2,8 @@ package baekjoon.silver;
 
 import java.util.Scanner;
 
+
+// 완탐
 public class Main_3085 {
     public static char[][] board;
     public static int N;
