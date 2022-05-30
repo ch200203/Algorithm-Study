@@ -24,11 +24,17 @@ public class Main_2579 {
         dp[1] = arr[1];
 
         if( N >= 2){
-            dp[2] = arr[1] + arr[2];
+            dp[2] = arr[1] + arr[2];    
         }
 
         System.out.println(find(N));
     }   
+
+    /*
+        즉, 현재 인덱스 i 에 대해 두 칸 전(i - 2)의
+        '메모이제이션 값'과 첫 칸 전(i - 1)의 값 + 셋 째칸 전(i - 3)의 '메모이제이션 값' 중 큰 값을 
+        현재 i 계단의 값과 합하여 DP배열에 저장(Memoization)을 해주면 된다.
+    */
 
     public static int find(int N) {
         if(dp[N] == null) {
