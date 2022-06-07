@@ -23,8 +23,7 @@ public class solution10 {
 			.sorted((s1,s2) -> (s2+s1).compareTo(s1+s2))
 			.collect(Collectorsjoining());
 		==> 이런 방식으로 축약 가능.
-		*/ 
-		
+		*/ 		
 		String[] result = new String[numbers.length];
 		
 		for (int i = 0; i < numbers.length; i++) {
