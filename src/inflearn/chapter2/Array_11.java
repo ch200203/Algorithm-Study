@@ -23,7 +23,7 @@ public class Array_11 {
 
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < 5; j++) {
-                arr[i][j]
+                // arr[i][j]
             }
         }
     }
