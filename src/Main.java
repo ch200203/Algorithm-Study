@@ -1,27 +1,21 @@
 import java.util.*;
 
-public class Main {
+class Main {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
+        int a = scan.nextInt();
+        int b = scan.nextInt();
+
+        int[] arr = new int[1001];
         
-        // 로프 수
-        int N = scan.nextInt();
-        
-        // 각로프가 버틸 수 있는 중량
-        int[] arr = new int[N + 1];
-        
-        for(int i = 1; i <= N; i++){
-            arr[i] = scan.nextInt();
+        int answer = 0;
+
+        for (int i = 0; i < arr.length; i++) {
+            
         }
         
-        Arrays.sort(arr);
-        int max = arr[N];
+       
         
-        for(int i = 1; i < N; i++){
-            max = Math.max(max, arr[i] * N - (i - 1));		
-        } 
-        
-        System.out.println(max);
-        
+        System.out.println(answer);
     }
 }
