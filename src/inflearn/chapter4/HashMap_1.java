@@ -4,6 +4,8 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
+import org.omg.Messaging.SyncScopeHelper;
+
 public class HashMap_1 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
@@ -22,7 +24,7 @@ public class HashMap_1 {
 
         for (char x : str.toCharArray()) {
             // x : key, getOrDefault => x의 key 가 없다면 default 값 설정!
-            map.put(x, map.getOrDefault(map, 0) + 1);
+            map.put(x, map.getOrDefault(x, 0) + 1);
         }
 
         for (char key : map.keySet()) {
@@ -31,7 +33,6 @@ public class HashMap_1 {
                 answer = key;
             }
         }
-
         System.out.println(answer);
 
         // 해당 키가 있는지 확인 하는 메소드 retrun boolean
