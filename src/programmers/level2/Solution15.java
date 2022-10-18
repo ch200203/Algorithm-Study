@@ -1,6 +1,5 @@
 package programmers.level2;
 
-import javafx.beans.binding.IntegerBinding;
 
 public class Solution15 {
 
