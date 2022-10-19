@@ -1,5 +1,7 @@
 package inflearn.DFSBFS;
 
+
+// 이진트리 순회
 public class Node {
     int data;
     Node lt, rt; // 객체주소 저장

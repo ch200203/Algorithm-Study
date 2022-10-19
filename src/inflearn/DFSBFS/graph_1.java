@@ -64,10 +64,5 @@ public class graph_1 {
         }
     }
 
-    // 이진트리 순회 (깊이 우선 순위)
-    public static int DFS_5() {
-        return 0;
-    }
-
 
 }
