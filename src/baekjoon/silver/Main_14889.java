@@ -6,7 +6,6 @@ import java.util.StringTokenizer;
 
 
 // 백트래킹 문제풀이 => DFS를 이용한 문제풀이
-
 class Main_1459 {
     static int N; // 입력
     static int[][] map; // 조합 점수표
