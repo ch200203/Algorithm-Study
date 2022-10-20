@@ -16,6 +16,8 @@ public class BinarySearch {
         else
             System.out.println("데이터의 위치는 " + (result + 1) + "번 째입니다.");
 
+        scan.close();
+
     }
 
     public static int binarySearch(int[] arr, int search) {

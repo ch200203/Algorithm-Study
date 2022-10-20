@@ -4,8 +4,6 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-import org.omg.Messaging.SyncScopeHelper;
-
 public class HashMap_1 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);

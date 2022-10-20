@@ -20,7 +20,7 @@ public class compareTo {
 
         Collections.sort(arr);
 
-        for (Point point : arr) {
+        for (Point o : arr) {
             System.out.println(o.x + " " + o.y);
         }
 

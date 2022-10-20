@@ -1,3 +1,5 @@
+package baekjoon.silver;
+
 import java.util.*;
 
 class Main_3 {
