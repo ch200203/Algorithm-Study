@@ -1,4 +1,6 @@
-import java.util.*;;
+package baekjoon.silver;
+
+import java.util.*;
 
 public class Main_13414 {
     public static void main(String[] args) throws Exception {

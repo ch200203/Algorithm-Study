@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class dp_1 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        System.out.println(solution(scan.nextInt());
+        System.out.println(solution(scan.nextInt()));
     }
 
     public static int solution(int n) {

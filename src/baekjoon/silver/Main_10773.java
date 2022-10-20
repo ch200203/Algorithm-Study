@@ -1,3 +1,5 @@
+package baekjoon.silver;
+
 import java.util.Stack;
 import java.util.Scanner;
  
@@ -31,6 +33,8 @@ public class Main_10773 {
 		}
  
 		System.out.println(sum);		
+
+		scan.close();
 	}
  
 }

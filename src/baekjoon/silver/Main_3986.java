@@ -1,3 +1,5 @@
+package baekjoon.silver;
+
 import java.util.Scanner;
 import java.util.Stack;
 

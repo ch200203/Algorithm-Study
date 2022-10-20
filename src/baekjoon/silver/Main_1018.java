@@ -1,6 +1,7 @@
+package baekjoon.silver;
+
 import java.util.Scanner;
  
-
 // 체스판 다시칠하기
 public class Main_1018 {
  

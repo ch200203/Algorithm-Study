@@ -13,6 +13,8 @@ public class String_10 {
         for (int i : soluition(str, t)) {
             System.out.print(i + " ");
         }
+
+        scan.close();
     }
 
     public static int[] soluition(String str, String t) {
