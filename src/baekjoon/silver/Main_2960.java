@@ -11,17 +11,19 @@ public class Main_2960 {
         int m = scan.nextInt();
 
         System.out.println(solution(n, m));
+
+        scan.close();
     }
 
     private static int solution(int n, int m) {
         boolean[] prime = new boolean[n + 1];
 
         for(int i = 2; i <= n; i++) {
-            if(prime[i]) continue;
+            // if(prime[i]) continue;
             for (int j = i; j <= n; j+= i) {
-                if(!prime[j]) {
+                if(prime[j] == false) {
                     m--;
-                    prime[i] = true;
+                    prime[j] = true;
                 }
 
                 if(m == 0) return j;
