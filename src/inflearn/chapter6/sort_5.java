@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 // O(nlogn)
+// 해시맵으로도 풀수 있음 O(n)
 public class sort_5 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
@@ -15,6 +16,8 @@ public class sort_5 {
         }
 
         System.out.println(solution(n, arr));
+
+        scan.close();
     }
 
     public static String solution(int n, int[] arr) {
