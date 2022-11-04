@@ -69,13 +69,13 @@ public class solution31 {
 
     // stack 사용한 풀이법 
     // 좋은 풀이법!
-    public static int solution_3(int[] ingredient) {
+    public int solution_3(int[] ingredient) {
         int[] stack = new int[ingredient.length];
-        int sp = 0, answer = 0;
-
-        for (int i : stack) {
+        int sp = 0;
+        int answer = 0;
+        for (int i : ingredient) {
             stack[sp++] = i;
-            if(sp >= 4 && stack[sp - 1] == 1
+            if (sp >= 4 && stack[sp - 1] == 1
                 && stack[sp - 2] == 3
                 && stack[sp - 3] == 2
                 && stack[sp - 4] == 1) {
