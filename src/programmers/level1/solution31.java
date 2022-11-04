@@ -1,7 +1,6 @@
 package programmers.level1;
 
 import java.util.ArrayList;
-import java.util.Stack;
 
 public class solution31 {
     public static void main(String[] args) {
@@ -9,8 +8,8 @@ public class solution31 {
         // ={2, 1, 1, 2, 3, 1, 2, 3, 1};
         = {1, 3, 2, 1, 2, 3, 1, 3, 1, 2};
         System.out.println(solution_2(ingredient));
-    }
 
+    }
     // 시간 초과
     private static int solution_2(int[] ingredient) {
         int answer = 0;
@@ -20,7 +19,6 @@ public class solution31 {
     
         String str = sb.toString();
         while(str.contains("1231")) {
-            System.out.println(str);
             str = str.replaceFirst("1231", "");
             answer++;
         }       
@@ -67,7 +65,7 @@ public class solution31 {
         return answer;
     }
 
-    // stack 사용한 풀이법 
+    // 배열 stack 사용한 풀이법 
     // 좋은 풀이법!
     public int solution_3(int[] ingredient) {
         int[] stack = new int[ingredient.length];
