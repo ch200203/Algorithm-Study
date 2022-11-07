@@ -1,7 +1,6 @@
 package programmers.level1;
 
 import java.util.*;
-import java.util.stream.Collectors;
 
 /**
  * 숫자 짝궁

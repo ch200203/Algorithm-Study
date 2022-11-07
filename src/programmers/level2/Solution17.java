@@ -1,7 +1,5 @@
 package programmers.level2;
 
-import java.util.Arrays;
-
 /**
  * level2 피로도
  * https://school.programmers.co.kr/learn/courses/30/lessons/87946
@@ -23,7 +21,7 @@ public class Solution17 {
         dfs(0, k, dungeons);
         return answer;
     }
-    
+
     private static void dfs(int depth, int k, int[][] dungeons) {
         for (int i = 0; i < dungeons.length; i++) {
             if(!visited[i] && dungeons[i][0] <= k) {
