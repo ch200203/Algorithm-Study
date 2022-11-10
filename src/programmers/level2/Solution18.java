@@ -2,6 +2,9 @@ package programmers.level2;
 
 import java.util.Stack;
 
+/**
+ * 택배 상자
+ */
 public class Solution18 {
     public static void main(String[] args) {
         int[] order = {4, 3, 1, 2, 5};
