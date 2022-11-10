@@ -2,7 +2,7 @@ package programmers.level1;
 
 import java.util.ArrayList;
 
-public class solution31 {
+public class Solution31 {
     public static void main(String[] args) {
         int[] ingredient //= {1, 2, 3, 1};
         // ={2, 1, 1, 2, 3, 1, 2, 3, 1};
@@ -16,7 +16,7 @@ public class solution31 {
         StringBuilder sb = new StringBuilder();
         if(ingredient.length < 4) return 0;
         for (int i : ingredient) sb.append(i);
-    
+
         String str = sb.toString();
         while(str.contains("1231")) {
             str = str.replaceFirst("1231", "");
@@ -37,7 +37,7 @@ public class solution31 {
         resultList.add(2);
         resultList.add(3);
         resultList.add(1);
-
+        
         for (int i = 0; i < ingredient.length; i++) {
             hamList.add(ingredient[i]);
 
@@ -61,7 +61,7 @@ public class solution31 {
                 }
             }
         }
-        
+
         return answer;
     }
 
