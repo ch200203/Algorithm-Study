@@ -1,6 +1,9 @@
-package programmers.level2.stack;
+package programmers.level2.statckqueue;
 
-public class solution1 {
+/**
+ * 
+ */
+public class Solution1 {
 	public static void main(String[] args) {
 		
 	}
