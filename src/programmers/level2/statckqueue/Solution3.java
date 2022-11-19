@@ -1,6 +1,5 @@
 package programmers.level2.statckqueue;
 
-import java.util.Collection;
 import java.util.Collections;
 import java.util.LinkedList;
 import java.util.PriorityQueue;
@@ -26,7 +25,7 @@ public class Solution3 {
     private static int solution(int[] priorities, int location) {
         int answer = 0;
     
-        PriorityQueue<Integer> priorityQueue = new PriorityQueue<>();
+        PriorityQueue<Integer> priorityQueue = new PriorityQueue<>(Collections.reverseOrder());
 
         for(int i : priorities) priorityQueue.add(i);
 
