@@ -1,7 +1,5 @@
 package inflearn.DFSBFS;
 
-import java.util.Scanner;
-
 // Recursive, Tree, Graph(DFS, BFS 기초)
 // 재귀함수 
 public class graph_1 {
