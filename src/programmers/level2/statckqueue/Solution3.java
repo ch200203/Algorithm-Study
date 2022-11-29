@@ -41,7 +41,6 @@ public class Solution3 {
                 }
             }
         }
-        
         return -1;
     }
 
