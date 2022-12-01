@@ -40,7 +40,7 @@ public class Solution3 {
                     answer++;
                 }
             }
-        }
+        } 
         return -1;
     }
 
