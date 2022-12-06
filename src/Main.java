@@ -3,19 +3,30 @@ import java.util.*;
 class Main {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        int a = scan.nextInt();
-        int b = scan.nextInt();
-
-        int[] arr = new int[1001];
+        int N = scan.nextInt();
+        ArrayList<String> list = new ArrayList<>();
         
-        int answer = 0;
-
-        for (int i = 0; i < arr.length; i++) {
-            
+        for(int i = 0; i < N; i++) {
+            list.add(scan.nextLine());
         }
         
-       
+        int answer = 0, idx = 0;
+        Set<String> set = new HashSet<>();
         
-        System.out.println(answer);
+        while(idx > list.get(0).length() - 1) {
+            for(String s :list) {
+                String str = s.substring(idx, s.length() -1);
+                set.add(str);a
+                
+                if(set.size() == N) {
+                    System.out.println(answer);
+                    return;
+                }
+                
+                set.clear();
+            }
+        }
+        
+        
     }
 }

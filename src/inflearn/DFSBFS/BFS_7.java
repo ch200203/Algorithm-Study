@@ -42,14 +42,4 @@ public class BFS_7 {
     }
 }
 
-// 이진트리 순회
-class Node {
-    int data;
-    Node lt, rt; // 객체주소 저장
-
-    public Node(int val) {
-        data = val;
-        lt = rt = null;
-    }
-}
 
