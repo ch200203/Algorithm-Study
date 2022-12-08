@@ -15,8 +15,9 @@ public class BFS_13 {
         Queue<Integer> queue = new LinkedList<>();
         visit[v] = 1;
         dis[v] = 0;
-        queue.offer(v);
+        queue.offer(v); // 1번 정점 할당
         while(!queue.isEmpty()) {
+            // 가장 최근의 간선 
             int cv = queue.poll();
             for (int nv : graph.get(v)) {
                 // 방문여부 확인
