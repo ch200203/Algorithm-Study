@@ -7,49 +7,40 @@ package programmers.level2;
 // https://programmers.co.kr/learn/courses/30/lessons/12953
 
 
-
-// 유클리드 호제법 읻용
-
 public class Solution3 {
 	public static void main(String[] args) {
 		int [] arr = {2, 6 ,8 ,14};
 		
 		System.out.println("answer :: " + solution(arr));
-		
-		
 	}
 	
 	public static int solution(int[] arr){
-		int res = 0;
+		int answer = 0;
 		
-		 /*int lcm1 = arr[0];
-	      for(int i=0;i<arr.length;i++) {
-	    	  
-	    		  lcm1 =lcm(lcm1,arr[i]);
-	    	  
-	      }
-	      return lcm1;*/
+		if(arr.length == 1) return arr[0]; // 원소가 한개인 경우는 바로 출력
+		int g = gcd(arr[0], arr[1]); // 처음 두 원소의 최대 공약수
+		answer = (arr[0] * arr[1]) / g; // 처음 두 원소의 최소 공배수
+
+		/*
+		 * 원소의 갯수가 3개 이상인 경우
+		 * 앞의 두 원소의 최소 공배수와 다음 원소의 최소 공배수를 반복해서 구함
+		 */
 		
-		for (int i = 0; i < arr.length; i++) {
-			for (int j = i + 1; j < arr.length; j++) {
-				res = lcm(arr[i], arr[j]);
+		 if(arr.length > 2) {
+			for(int i = 2; i < arr.length; i++) {
+				g = gcd(answer, arr[i]);
+				answer = (answer * arr[i]) / g;
 			}
-		}
+		 }
 		
-		return 0;
+		return answer;
 	}
-	
-	static int gcd(int a, int b){
-		while(b !=0 ){
-			int r = a% b;
-			a = b;
-			b = r;
-		}
-		return a;
-	}
-	
-	static int lcm(int a, int b){
-		return a * b / gcd(a,b);
+
+	// 유클리드 호제법 이용
+	private static int gcd(int a, int b){
+		int result = a % b;
+		if(result == 0) return b;
+		else return gcd(a, b);
 	}
 
 }
