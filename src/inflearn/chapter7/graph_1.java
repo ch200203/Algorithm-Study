@@ -1,4 +1,4 @@
-package inflearn.DFSBFS;
+package inflearn.chapter7;
 
 // Recursive, Tree, Graph(DFS, BFS 기초)
 // 재귀함수 
