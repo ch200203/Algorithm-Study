@@ -10,22 +10,39 @@ import java.util.Scanner;
  * 
  */
 public class dfs_1 {
+    static String answer = "NO";
+    static int n = 0, total = 0;
+    static boolean flag = false;
+
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        int n = scan.nextInt();
+        n = scan.nextInt();
         int[] arr = new int[n];
         
-        for(int i = 0; i < n; i++) arr[i] = scan.nextInt();
+        for(int i = 0; i < n; i++) {
+            arr[i] = scan.nextInt();
+            total += arr[i];
+        };
 
-        solution(n, arr);
+        dfs(0 , 0, arr);
+        
+        System.out.print(answer);
+
+        scan.close();
     }
 
-    private static String solution(int n, int[] arr) {
-        
-    }
-
-    private static int dfs(int n) {
-        
+    private static void dfs(int level, int sum, int[] arr) {
+        if(flag) return;
+        if(level == n) {
+            if((total - sum) == sum) {
+                answer = "YES";
+                flag = true; // 두 부분집합을 찾은 경우
+            }
+        } else {
+            dfs(level + 1, sum + arr[level], arr); /// 해당하는 level의 원소를 사용하는 경우
+            dfs(level + 1, sum, arr); // 사용하지 않는 경우
+            // => 두가지로 나누어 부분집합을 생성합니다.
+        }
     }
     
 }
