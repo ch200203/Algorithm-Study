@@ -1,4 +1,4 @@
-package baekjoon.silver.Deqeue;
+package baekjoon.silver.Queue;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

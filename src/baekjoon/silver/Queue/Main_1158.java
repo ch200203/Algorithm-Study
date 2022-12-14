@@ -1,4 +1,4 @@
-package baekjoon.silver;
+package baekjoon.silver.Queue;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -31,6 +31,7 @@ public class Main_1158 {
                 queue.offer(tmp);
             }       
         }
+        
         StringBuilder sb = new StringBuilder();
         sb.append("<");
         for(int i = 0; i < list.size(); i++){
