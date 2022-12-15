@@ -1,4 +1,4 @@
-package inflearn.DFSBFS;
+package inflearn.chapter7;
 
 public class DFS_6 {
     /**

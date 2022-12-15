@@ -1,4 +1,4 @@
-package inflearn.DFSBFS;
+package inflearn.chapter7;
 
 
 // 이진트리 순회
