@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class dfs_3 {
     static int n, m, answer =0;
-    static int[][] arr;
+    static int[][] arr; // => 배열을 두개 사용해도 괜찮음
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 

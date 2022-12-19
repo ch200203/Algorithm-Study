@@ -14,8 +14,8 @@ public class dfs_2 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         
-        int n = scan.nextInt();
-        int c = scan.nextInt();
+        n = scan.nextInt();
+        c = scan.nextInt();
 
         arr = new int[n];
 
