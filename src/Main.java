@@ -16,7 +16,7 @@ class Main {
         while(idx > list.get(0).length() - 1) {
             for(String s :list) {
                 String str = s.substring(idx, s.length() -1);
-                set.add(str);a
+                set.add(str);
                 
                 if(set.size() == N) {
                     System.out.println(answer);

@@ -47,14 +47,4 @@ public class Main_3085 {
         board[x1][y1] = board[x2][y2];
         board[x2][y2] = tmp;
     }
-
-    // 행 확인
-    public static int chkRow(int x) {
-        
-
-    }
-    // 열 확인
-    public static int chkCol(int y) {
-
-    }
 }
