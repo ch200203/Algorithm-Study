@@ -19,7 +19,7 @@ public class dfs_6 {
         } else {
             for(int i = 0; i < n; i++) {
                 if(ch[i] == 0) {
-                    ch[i] = 1; // 사용여 arr의 부 체크배열의 i번째 원소를 사용해서 만들었다고 표기.
+                    ch[i] = 1; // 사용여부 체크 arr의 배열의 i번째 원소를 사용해서 만들었다고 표기.
                     pm[level] = arr[i];
                     DFS(level + 1);
                     ch[i] = 0; // 사용후 해제
