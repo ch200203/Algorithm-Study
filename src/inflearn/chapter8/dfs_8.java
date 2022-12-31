@@ -55,6 +55,8 @@ public class dfs_8 {
         }
         
         DFS(0, 0);
+
+        scan.close();
     }
 
 
