@@ -17,8 +17,7 @@ public class Main_1546 {
 
         for (int i = 0; i < N; i++) {
             int score = Integer.parseInt(st.nextToken());
-            // max = Math.max(max, score);
-            if(score > max) max = score;
+            max = Math.max(max, score);
             sum += score;
         }
 
