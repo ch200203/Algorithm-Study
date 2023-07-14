@@ -1,10 +1,7 @@
-package baekjoon.Bronze;
+package baekjoon.bronze;
 
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.util.Scanner;
-import java.util.StringTokenizer;
 
 class Main_2908{
     public static void main(String[] args) throws IOException{

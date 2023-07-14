@@ -21,7 +21,7 @@ public class bfs_1 {
         // 출발점 체크
         board[x][y] = 1;
         while(!queue.isEmpty()) {
-            Point tmp = queue.poll(); 
+            Point tmp = queue.poll();
             for (int i = 0; i < 4; i++) {
                 int nx = tmp.x + dx[i];
                 int ny = tmp.y + dy[i];
@@ -53,11 +53,11 @@ public class bfs_1 {
     }
 }
 
-class Point {
+class Point2 {
     int x;
     int y;
     
-    public Point(int x, int y ) {
+    public Point2(int x, int y ) {
         this.x = x;
         this.y = y;
     }
