@@ -18,7 +18,7 @@ public class Main_1029 {
         int N = Integer.parseInt(st.nextToken());
 
         prime = new boolean[N + 1];
-		getPrime();
+        getPrime();
         
         for(int i = M; i <= N; i++){
             if(!prime[i]) System.out.println(i);
