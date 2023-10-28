@@ -7,7 +7,7 @@ import java.util.*;
  * https://leetcode.com/problems/island-perimeter/
  * RunTime :
  */
-class Island-perimeter {
+public class IslandPerimeter {
 
     static int dx[] = {0, 1, 0, -1};
     static int dy[] = {1, 0, -1, 0};
