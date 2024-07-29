@@ -41,7 +41,7 @@ public class BinarySearch {
 
     // 재귀로 구현
     private static int binarySearch2(int[] arr, int search, int left, int right) {
-        if (left <  right) {
+        if (left > right) {
             return -1;
         }
 
