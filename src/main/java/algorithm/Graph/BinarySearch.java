@@ -1,4 +1,4 @@
-package Algorithm.Graph;
+package algorithm.Graph;
 
 import java.util.Scanner;
 
@@ -20,7 +20,8 @@ public class BinarySearch {
 
     }
 
-    public static int binarySearch(int[] arr, int search) {
+    // 반복문으로 구현
+    private static int binarySearch(int[] arr, int search) {
         int low = 0;
         int mid = 0;
         int high = arr.length;
@@ -36,6 +37,24 @@ public class BinarySearch {
                 return mid;
         }
         return -1;
+    }
+
+    // 재귀로 구현
+    private static int binarySearch2(int[] arr, int search, int left, int right) {
+        if (left <  right) {
+            return -1;
+        }
+
+        // 배열의 가운데
+        int mid = left + (right - left) / 2;
+
+        if (arr[mid] == search) {
+            return mid;
+        } else if (arr[mid] < search) {
+            return binarySearch2(arr, search, mid + 1, right);
+        } else { // arr[mid] > search
+            return binarySearch2(arr, search, left, mid - 1);
+        }
     }
 
 }

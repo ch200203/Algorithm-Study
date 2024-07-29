@@ -1,6 +1,5 @@
-package Algorithm.Graph;
+package algorithm.Graph;
 
-import java.util.Scanner;
 import java.util.Stack;
 
 public class Stack_impl {

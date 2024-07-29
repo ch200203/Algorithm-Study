@@ -1,6 +1,4 @@
-package Algorithm.Graph;
-
-import java.util.Scanner;
+package algorithm.Graph;
 
 /*
  * @ TITLE DFS(Depth First Search)

@@ -1,4 +1,4 @@
-package Algorithm.Sort;
+package algorithm.Sort;
 
 
 // 참고 : https://st-lab.tistory.com/104

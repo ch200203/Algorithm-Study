@@ -1,4 +1,4 @@
-## Algorithm-Study
+## algorithm-Study
 
 ### 코딩테스트 준비 및 알고리즘 풀이 공부 레포
 

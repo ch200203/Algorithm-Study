@@ -1,8 +1,6 @@
-package Algorithm.Graph;
+package algorithm.Graph;
 
-import java.util.Iterator;
 import java.util.PriorityQueue;
-import java.util.Scanner;
 
 // 다익스트라 알고리즘
 // 참고 : https://blog.naver.com/PostView.naver?blogId=ndb796&logNo=221234424646&redirect=Dlog&widgetTypeCall=true&directAccess=false

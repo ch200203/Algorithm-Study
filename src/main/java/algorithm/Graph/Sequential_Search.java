@@ -1,4 +1,4 @@
-package Algorithm.Graph;
+package algorithm.Graph;
 
 import java.util.Scanner;
 
