@@ -7,14 +7,11 @@ package leetCode.Easy;
  */
 public class PalindromeNumber {
     private boolean isPalindrome(int x) {
-        if(String.valueOf(x).length() % 2 == 0 || x <= 0) 
-            return false;
-        
-        String reverseNumber = new StringBuffer(String.valueOf(x)).reverse().toString();
-        if(String.valueOf(x).equals(reverseNumber)) {
-            return true;
-        }
+        if (x < 0) return false;
 
-        return false;
+        String str = String.valueOf(x);
+        String reversed = new StringBuilder(str).reverse().toString();
+
+        return str.equals(reversed);
     }
 }
